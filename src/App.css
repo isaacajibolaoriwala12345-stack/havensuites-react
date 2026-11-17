@@ -1,0 +1,410 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: #102b2b;
+  color: white;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #d9b77e;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #d9b77e;
+}
+
+.nav-button, .primary-button {
+  display: inline-block;
+  background: #c49a60;
+  color: #102b2b;
+  padding: 13px 23px;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:hover, .primary-button:hover {
+  background: #e0c79f;
+  transform: translateY(-2px);
+}
+
+.hero {
+  min-height: 590px;
+  background: linear-gradient(90deg, rgba(8, 29, 29, .88), rgba(8, 29, 29, .25)),
+    url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1800') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 60px 9%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: #bd9258;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.08;
+  margin: 0 0 20px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  line-height: 1.8;
+  max-width: 480px;
+  margin-bottom: 30px;
+  color: #e8eeee;
+}
+
+.section, .page-section {
+  padding: 85px 8%;
+}
+
+.intro {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+}
+
+.intro h2, .section-heading h2, .booking-container h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #102b2b;
+}
+
+.intro > p:last-child {
+  color: #666;
+  line-height: 1.8;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 35px;
+  gap: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.text-link {
+  color: #a4773e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.room-card {
+  background: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,.07);
+  overflow: hidden;
+}
+
+.room-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.room-info {
+  padding: 23px;
+}
+
+.room-info h3 {
+  color: #102b2b;
+  font-family: Georgia, serif;
+  font-size: 22px;
+}
+
+.room-info p {
+  color: #777;
+  line-height: 1.7;
+  min-height: 55px;
+}
+
+.room-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+}
+
+.room-bottom strong {
+  color: #a4773e;
+}
+
+.room-bottom small {
+  font-size: 11px;
+  color: #777;
+}
+
+.feature-banner {
+  min-height: 390px;
+  background: linear-gradient(90deg, rgba(8,29,29,.9), rgba(8,29,29,.3)),
+    url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  color: white;
+}
+
+.feature-banner h2 {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.footer {
+  background: #102b2b;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.footer h2 {
+  letter-spacing: 3px;
+}
+
+.footer p {
+  color: #c4ceca;
+  font-size: 13px;
+}
+
+.page-section > h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 5vw, 55px);
+  color: #102b2b;
+  margin: 10px 0 15px;
+}
+
+.page-description {
+  color: #777;
+  line-height: 1.7;
+}
+
+.about-page {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-page > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin: 30px 0;
+}
+
+.about-page h2 {
+  font-family: Georgia, serif;
+  color: #102b2b;
+  font-size: 30px;
+}
+
+.about-page > p:not(.eyebrow) {
+  color: #666;
+  line-height: 1.9;
+  max-width: 850px;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 55px;
+  background: #f2f0e9;
+  padding: 45px;
+  margin-top: 80px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form label {
+  color: #102b2b;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8d8d0;
+  background: white;
+  font: inherit;
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: #b88d56;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-message {
+  color: #276b48;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 55px;
+  margin-top: 45px;
+}
+
+.contact-details {
+  background: #102b2b;
+  color: white;
+  padding: 35px;
+}
+
+.contact-details h2 {
+  font-family: Georgia, serif;
+  margin-bottom: 30px;
+}
+
+.contact-details p {
+  line-height: 1.8;
+  color: #d6dfdc;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-container, .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  .logo {
+    font-size: 19px;
+  }
+
+  .nav-button {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 520px;
+    padding: 45px 7%;
+  }
+
+  .section, .page-section {
+    padding: 60px 6%;
+  }
+
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .booking-container {
+    padding: 25px 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-banner h2 {
+    font-size: 35px;
+  }
+
+  .about-page > img {
+    height: 250px;
+  }
+}
